@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grandparent">
+        <div class="header">
+            <h1 class="head">
+                Currency Convertor
+            </h1>
+        </div>
+        <form action="$" method="get">
+            <div class="parent">
+                <div class="header_parent" style="margin-bottom:35px; width:80%;">
+                    <label for="amt">Enter Amount</label>
+                    <br>
+                    <input type="text" id="amt"class="text" style = "width:100%; height:30px;padding:5px;border-radius: 8px;">
+                </div>
+                <div class="inner_parent" style="width:80%; margin-bottom: 30px; text-align: center;">
+                    <div class="inner_child1">
+                        <label for="from">From</label>
+                        <br>
+                       <div class="select_container_1">
+                        <img src="https://flagsapi.com/US/flat/64.png" />
+                        <br>
+                        <select name="country_1st" id="from">
+                            <option value="USA" selected ="selected">USA</option>
+                        </select>
+                       </div>
+                    </div>
+                    <div class="inner_child2">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <div class="inner_child3" style="text-align: center;">
+                        <label for="to">To</label>
+                        <div class="select_container_2">
+                            <img src="https://flagsapi.com/IN/flat/64.png" />
+                            <br>
+                            <select name="country_2nd" id="to">
+                                <option value="INR" selected ="selected">INR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg" style =" font-size: 20px; color: black; opacity: 100%; text-shadow: 2px 2px 2px solid; border: 2px solid black; border-radius:8px; padding:10px; width:60%; text-align: center; margin-bottom: 35px;">1USD  =  80INR</div>
+                <button type="submit" style = "width:80%; border-radius: 12px; background-color: rgb(158, 158, 152); padding: 5px; font-size: 18px;" class="btn">Get Exchange Rate</button>
+            </div>
+        </form>
+    </div>
+    <script src="country_all.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

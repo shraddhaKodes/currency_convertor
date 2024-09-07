@@ -1,0 +1,68 @@
+body{
+    height:100vh;
+    width : 100vw;
+    opacity: 95%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.grandparent{
+    height: 95vh;
+    width:90vw;
+    background-image: url("currency.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    text-align: center;
+}
+.head{
+    color:white;
+}
+.parent{
+    height:400px;
+    width:450px;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    opacity: 90%;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner_parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+label{
+    font-size: 20px; color: black; opacity: 100%; text-shadow: 2px 2px 2px solid;
+}
+input , select{
+    background-color: rgb(233, 244, 249); opacity: 80%; height:20px; border:2px solid black;
+}
+option{
+    background-color: gray;
+    color:white;
+}
+@media(max-width:450px){
+    .parent{
+        width:250px;
+        height: 400px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .text{
+        width: 120px;
+    }
+}
